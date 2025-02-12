@@ -3,13 +3,9 @@ const fs=require('fs')
 const users=require("./MOCK_DATA.json");
 const { error } = require("console");
 const { stringify } = require("querystring");
-const { runInNewContext } = require("vm");
-const {connectMongodb}=require("./connection/connect")
+
 const app=express();
 const PORT=8000;
-
-    //DB Connect
-connectMongodb("mongodb://localhost:27017/my_db")
 
 //middilware
 app.use(express.urlencoded({extends:false}));
