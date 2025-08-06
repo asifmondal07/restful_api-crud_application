@@ -5,7 +5,7 @@ const { error } = require("console");
 const { stringify } = require("querystring");
 
 const app=express();
-const PORT=8000;
+const PORT=8002;
 
 //middilware
 app.use(express.urlencoded({extends:false}));
